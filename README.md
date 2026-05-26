@@ -18,6 +18,11 @@ Um software interativo executado via linha de comando (CLI) voltado para o monit
 - **Como funciona:** O usuário realiza um cadastro inicial e pode gerenciar sua alimentação diária informando o peso dos alimentos consumidos. O script calcula a porção exata de proteína ingerida baseando-se na densidade nutricional por 100g e gera um resumo total do dia com alertas visuais.
 - **Tecnologias:** Python 3, manipulação avançada de Estruturas de Dados (listas e dicionários aninhados) e loops de repetição para menus interativos.
 
+  
+### 📈 3. Gerenciador de Ativos Financeiros (Simulador de Home Broker)
+Um sistema em linha de comando (CLI) projetado para gerenciar uma carteira de investimentos, permitindo o controle de posições em Ações e Fundos Imobiliários (FIIs).
+- **Como funciona:** O usuário pode simular a compra de ativos informando o ticker, a quantidade e o preço pago. O sistema calcula o preço médio/total investido por ativo, permite buscar posições individuais de forma rápida e gera um relatório consolidado com a soma de todo o patrimônio acumulado na carteira.
+- **Tecnologias:** Python 3, manipulação de strings (`.upper()` para padronização de tickers), tratamento de dados e estruturas de repetição para busca linear.
 ---
 
 ## 🛠️ Competências e Conceitos de ADS Aplicados
@@ -27,6 +32,7 @@ Nesses projetos, foram consolidados conceitos fundamentais de engenharia de soft
 - **Tratamento de Erros e Exceções:** Implementação robusta de blocos `try/except` para prevenir travamentos (ex: tratamento de conversão de tipos de dados numéricos no formulário e leitura de arquivos).
 - **Manipulação de Arquivos e Dados:** Uso da biblioteca Pandas e do motor `openpyxl` para ler, validar, filtrar e reescrever abas específicas de arquivos externos de dados de forma assíncrona.
 - **Interface e Experiência do Usuário (UX):** Validações com JavaScript no front-end para evitar exclusões acidentais no banco e formatação de dados decimais (`:.1f` e filtros Jinja) para melhor leitura de preços e quantidades.
+- ** Busca linear com Flag Booleana permite consitência do BD temporário, além da interrupção programada, necessária padronização de entradas apesar de toda comunidade saber que se utiliza caracteres maiusculos, algum equivoco pode incluir em minusculos então o `upper()` me garante uma consistência não permitindo erro no sistema. Zerar a variável `soma_patrimonio=0` e recalcular a cada nova visualizcão para evitar acumulo de memória que pode chocar com consultas anteriores.
 
 ---
 
